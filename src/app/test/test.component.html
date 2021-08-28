@@ -14,3 +14,15 @@
     {{siteUrl}}
 </h1>
 
+<!-- Difference between html attribute and DOM property  
+    Attribute changed and property doesn't-->
+
+<!-- Property Binding-->
+<input [id]="myId" type="text" value ="Bryan">
+<!-- Property Binding-->
+<input id-binding="isDisabled" type="text" value ="Bryan">
+
+<!-- Interpolation can only works with string values -->
+<input [disabled]="isDisabled" id={{myId}} type="text" value ="Bryan">
+
+

@@ -9,6 +9,8 @@ export class TestComponent implements OnInit {
 
   public name = "Bryan Townsend";
   public siteUrl = window.location.href;
+  public myId = "testId";
+  public isDisabled = true;
 
   constructor() { }
 
