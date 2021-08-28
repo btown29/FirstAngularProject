@@ -20,6 +20,7 @@ export class TestComponent implements OnInit {
     "text-special": this.isSpecial
   }
   public greeting = "";
+  public textoSincronizado = "";
   
 
   constructor() { }
@@ -34,6 +35,10 @@ export class TestComponent implements OnInit {
   onClick(event:any){
     console.log(event)
     this.greeting = event.type;
+  }
+  lowMessage(value:any){
+    console.log(value);
+
   }
 
 }
