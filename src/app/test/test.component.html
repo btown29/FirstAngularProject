@@ -1,13 +1,13 @@
 <h1>
     {{name}} is {{20 + 11}} years old
 </h1>
-<h1>  
+<h1 [style.color]="hasError ? 'red': 'orange'">  
     {{"His name is " + name}}
 </h1>
-<h1>  
+<h1 [class.text-danger]="hasError" >  
     {{"The length of his name is: " + name.length}}
 </h1>
-<h1>  
+<h1 [ngClass]="messageClasses">  
     {{greetUser()}}
 </h1>
 <h1>  
