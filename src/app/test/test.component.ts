@@ -19,6 +19,8 @@ export class TestComponent implements OnInit {
     "text-danger": this.hasError,
     "text-special": this.isSpecial
   }
+  public greeting = "";
+  
 
   constructor() { }
 
@@ -27,6 +29,11 @@ export class TestComponent implements OnInit {
 
   greetUser(){
     return "Hello " + this.name; 
+  }
+
+  onClick(event:any){
+    console.log(event)
+    this.greeting = event.type;
   }
 
 }
